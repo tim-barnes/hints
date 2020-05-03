@@ -1,24 +1,26 @@
 ---
 title: "Traits of Bad Software"
 date: 2020-05-01T007:52:18+01:00
-draft: true
+draft: false
+weight: 10
+pre: "<b>2. </b>"
 ---
 
 ### Rigid
 
-
+Simple changes ripple through the code.
 
 ### Fragile
 
-
+Simple changes break code in multiple ways.
 
 ### Immobile
 
-Can only be deployed in a specific way, or onto specific hardware.
+Can only be deployed in a specific way, or onto specific hardware.  Effort to package code for reuse exceeds its value.
 
 ### Viscous
 
-Difficult to modify, or the effort to maintain the original design is far greater than 'a quick hack'.
+Difficult to modify, or the effort to maintain the original design integrity is far greater than 'a quick hack'.
 
 ### Complex
 
