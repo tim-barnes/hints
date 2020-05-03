@@ -3,6 +3,7 @@ title: "Traits of Good Software"
 date: 2020-04-30T14:53:18+01:00
 weight: 5
 pre: "<b>1. </b>"
+tags: ["general", "quality"]
 ---
 
 These have been mostly invariant since the dawn of time.

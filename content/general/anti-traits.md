@@ -4,6 +4,7 @@ date: 2020-05-01T007:52:18+01:00
 draft: false
 weight: 10
 pre: "<b>2. </b>"
+tags: ["general", "quality"]
 ---
 
 ### Rigid
