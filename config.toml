@@ -50,20 +50,25 @@ home = [ "HTML", "RSS", "JSON"]
 
 # Global menu section
 [[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 1
+
+[[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Github"
 url = "https://github.com/tim-barnes"
-weight = 2
+weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-linkedin'></i> LinkedIn"
 url = "https://www.linkedin.com/in/tim-barnes-63b58624/"
-weight = 5
+weight = 50
 
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-file-alt'></i> License CC-BY-4.0"
 url = "https://github.com/tim-barnes/hints/blob/master/LICENSE"
-weight = 10
+weight = 100
 
 
 
