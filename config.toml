@@ -3,7 +3,7 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "Hints and tips"
-theme = "techdoc"
+theme = "learn"
 
 hasCJKLanguage = false
 metaDataFormat = "yaml"
@@ -13,71 +13,59 @@ defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
 [params]
+    # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
+    # Useful to give opportunity to people to create merge request for your doc.
+    # See the config.toml file from this documentation site to have an example.
+    editURL = "https://github.com/tim-barnes/hints"
+    # Author of the site, will be used in meta information
+    author = "Tim Barnes"
+    # Description of the site, will be used in meta information
+    description = "This is a collection of random notes captured over a long career in software engineering. Most are fairly up to date. Some, like general quality tips, are invariant. Others are thoughts on trends in software development, either current or past."
+    # Shows a checkmark for visited pages on the menu
+    showVisitedLinks = false
+    # Disable search function. It will hide search bar
+    disableSearch = false
+    # Javascript and CSS cache are automatically busted when new version of site is generated.
+    # Set this to true to disable this behavior (some proxies don't handle well this optimization)
+    disableAssetsBusting = false
+    # Set this to true to disable copy-to-clipboard button for inline code.
+    disableInlineCopyToClipBoard = false
+    # A title for shortcuts in menu is set by default. Set this to true to disable it.
+    disableShortcutsTitle = false
+    # When using mulitlingual website, disable the switch language button.
+    disableLanguageSwitchingButton = false
+    # Hide breadcrumbs in the header and only show the current page title
+    disableBreadcrumb = false
+    # Hide Next and Previous page buttons normally displayed full height beside content
+    disableNextPrev = false
+    # Order sections in menu by "weight" or "title". Default to "weight"
+    ordersectionsby = "weight"
+    # Change default color scheme with a variant one. Can be "red", "blue", "green".
+    themeVariant = "blue"
+    # Provide a list of custom css files to load relative from the `static/` folder in the site root.
+    custom_css = []
 
-    # Source Code repository section
-    description = "Collection of random notes about tools, systems and software engineering"
-    github_repository = "https://github.com/tim-barnes/hints"
-    version = "0.1.0"
-
-    # Documentation repository section
-    # documentation repository (set edit link to documentation repository)
-    github_doc_repository = "https://github.com/thingsym/hugo-theme-techdoc"
-
-    # Analytic section
-    google_analytics_id = "" # Your Google Analytics tracking id
-    tag_manager_container_id = "" # Your Google Tag Manager container id
-    google_site_verification = "" # Your Google Site Verification for Search Console
-
-    # Open Graph and Twitter Cards settings section
-    # Open Graph settings for each page are set on the front matter.
-    # See https://gohugo.io/templates/internal/#open-graph
-    # See https://gohugo.io/templates/internal/#twitter-cards
-    title = "Hints"
-    images = ["images/og-image.png"] # Open graph images are placed in `static/images`
-
-    # Theme settings section
-    # Theme color
-    # See color value reference https://developer.mozilla.org/en-US/docs/Web/CSS/color
-    custom_font_color = ""
-    custom_background_color = ""
-
-    # Documentation Menu section
-    # Menu style settings
-    menu_style = "open-menu" # "open-menu" or "slide-menu"
-
-    # Date format
-    dateformat = "" # default "2 Jan 2006"
-    # See the format reference https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-
-    # path name excluded from documentation menu
-    menu_exclusion = [
-        "archives",
-        "archive",
-        "blog",
-        "entry",
-        "post",
-        "posts",
-    ]
-
-    # Algolia site search section
-    # See https://www.algolia.com/doc/
-    algolia_search_enable = true
-    algolia_indexName = "hugo-demo-techdoc"
-    algolia_appId = "7W4SAN4PLK"
-    algolia_apiKey = "cbf12a63ff72d9c5dc0c10c195cf9128" # Search-Only API Key
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
 # Global menu section
-# See https://gohugo.io/content-management/menus/
-[menu]
-    [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github"
+url = "https://github.com/tim-barnes"
+weight = 2
 
-    [[menu.main]]
-        name = "Github"
-        url = "https://github.com/tim-barnes"
-        weight = 2
+[[menu.shortcuts]]
+name = "<i class='fab fa-linkedin'></i> LinkedIn"
+url = ""
+weight = 2
+
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-file-alt'></i> License CC-BY-40"
+url = ""
+weight = 10
+
+
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
@@ -90,26 +78,3 @@ enableMissingTranslationPlaceholders = false
         endLevel = 4
         ordered = false
 
-# Algolia Search configure section
-[outputFormats.Algolia]
-    baseName = "algolia"
-    isPlainText = true
-    mediaType = "application/json"
-    notAlternative = true
-
-[params.algolia]
-    vars = [
-        "title",
-        "summary",
-        "content",
-        "date",
-        "publishdate",
-        "description",
-        "permalink",
-        "keywords",
-        "lastmod",
-    ]
-    params = [
-        "tags",
-        "categories",
-    ]
