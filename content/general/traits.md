@@ -26,6 +26,10 @@ Satisfies user's goals effectively and efficiently
 
 Protect data and operations from attack.  Does not introduce vulnerabilities.
 
+### Observable
+
+Allows for external inspection of its state, particularly under error conditions.
+
 ###  Timely
 
 Allows for efficient and predictable incremental changes.

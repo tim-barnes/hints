@@ -4,20 +4,21 @@ date: 2020-05-01T007:52:18+01:00
 draft: true
 ---
 
-These have been mostly invariant since the dawn of time.
-
 ### Rigid
+
 
 
 ### Fragile
 
 
+
 ### Immobile
 
+Can only be deployed in a specific way, or onto specific hardware.
 
 ### Viscous
 
-
+Difficult to modify, or the effort to maintain the original design is far greater than 'a quick hack'.
 
 ### Complex
 
