@@ -1,6 +1,6 @@
 ---
 title: "Traits of Bad Software"
-date: 2020-05-01T007:52:18+01:00
+date: 2020-05-01T07:52:18+01:00
 draft: false
 weight: 10
 pre: "<b>2. </b>"
